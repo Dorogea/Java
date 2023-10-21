@@ -11,10 +11,10 @@ public class ATM {
         Bank theBank = new Bank("Banca din Bapteni");
 
         //Adaugam un utilizator care creeaza si un cont secundar
-        User aUser = theBank.addUser("Test", "Marian", "1234");
+        User aUser = theBank.addUser("Marian", "Marian", "1234");
 
-        //Adaugam un cont de cecuri pentru utilizatori din SUA
-        Account newAccount = new Account("Checks (Pentru utilizatori din SUA)", aUser, theBank);
+        //Adaugam un cont de economii
+        Account newAccount = new Account("Cont de Economii", aUser, theBank);
         aUser.addAccount(newAccount);
         theBank.addAccount(newAccount);
 
